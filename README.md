@@ -10,4 +10,4 @@ Studies have shown that for-profit ownership exacerbates poor staffing as corpor
 
 When nurses aren't able to attend the needs of vulnerable elderly residents, deficient care is the main repercussion. Residents fall, they are not administered proper medicine or they are not given proper care. States have more deficiencies per capita filed against for-profit facilities, according to my analysis, proving how for-profit corporations can be connected to substandard care.
 
-The full project is here: [https://elenamlutz.github.io/D3-portfolio/piegraph.html](https://elenamlutz.github.io/D3-portfolio/piegraph.html)
+The full project is here: [https://elenamlutz.github.io/nursing-homes-D3/index.html](https://elenamlutz.github.io/nursing-homes-D3/index.html)

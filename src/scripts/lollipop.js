@@ -20,7 +20,7 @@ const svg = d3
 // Create our scales
 const xPositionScale = d3
   .scaleLinear()
-  .domain([0, 100])
+  .domain([0, 0.25])
   .range([0, width])
 
 const yPositionScale = d3
@@ -29,7 +29,7 @@ const yPositionScale = d3
   .padding(0.5)
 
 // Read in files
-d3.csv(require('../data/lollipop.csv'))
+d3.csv(require('../data/lollipopchart.csv'))
   .then(ready)
   .catch(err => {
     console.log(err)
@@ -56,7 +56,7 @@ function ready(datapoints) {
     .attr('text-anchor', 'left')
     .attr('x', -30)
     .attr('y', -100)
-    .text('Complaints Per Capita Against Nursing Homes')
+    .text('Complaints Per 1000 Residents Against Nursing Homes')
   svg
     .append('text')
     .attr('class', 'subtitle')
@@ -64,7 +64,7 @@ function ready(datapoints) {
     .attr('x', -30)
     .attr('y', -70)
     .text(
-      'These are the top 10 states with the worst staffing ratings in the country. Elderly'
+      'These are the top 10 states with the highest number of average complaints per'
     )
   svg
     .append('text')
@@ -73,7 +73,7 @@ function ready(datapoints) {
     .attr('x', -30)
     .attr('y', -50)
     .text(
-      'residents and family members have filed the majority of complaints against for-'
+      ' resident in the country. Elderly residents and family members have filed most'
     )
   svg
     .append('text')
@@ -81,7 +81,7 @@ function ready(datapoints) {
     .attr('text-anchor', 'left')
     .attr('x', -30)
     .attr('y', -30)
-    .text('profit-owned facilities.')
+    .text('complaints against for-profit-owned facilities.')
 
   svg
     .selectAll('g')
@@ -103,11 +103,7 @@ function ready(datapoints) {
         .offset([-10, 0])
         .html(function(d) {
           return (
-            "<span style='color:white'>" +
-            'Non-Profit: ' +
-            minHigh +
-            '%' +
-            '</span>'
+            "<span style='color:white'>" + 'Non-Profit: ' + minHigh + '</span>'
           )
         })
 
@@ -155,7 +151,7 @@ function ready(datapoints) {
   const xAxis = d3
     .axisBottom(xPositionScale)
     .tickSize(-height)
-    .ticks(14)
+    .ticks(7)
   svg
     .append('g')
     .attr('class', 'axis x-axis')

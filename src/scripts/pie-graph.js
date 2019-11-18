@@ -28,7 +28,7 @@ const pie = d3.pie().value(function(d) {
   return d.value
 })
 
-d3.csv(require('../data/piechart.csv'))
+d3.csv(require('../data/multiples.csv'))
   .then(ready)
   .catch(err => console.log('Failed with', err))
 function ready(datapoints) {

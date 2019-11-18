@@ -43,7 +43,7 @@ function ready(datapoints) {
     .entries(datapoints)
   container
     .append('text')
-    .text('Deficiencies Against Nursing Homes Per Capita')
+    .text('Deficiencies Per 1000 Residents Against Nursing Homes')
     .attr('class', 'title')
     .attr('font-size', 12)
     .attr('fill', 'black')
@@ -51,7 +51,7 @@ function ready(datapoints) {
   container
     .append('text')
     .text(
-      'The majority of deficiencies per capita due to Medicare non-compliance are filed mostly against for-profit owned facilities.'
+      'The majority of deficiencies per 1000 residents due to Medicare non-compliance are filed mostly against for-profit owned facilities.'
     )
     .attr('class', 'subtitle')
     .attr('x', -20)

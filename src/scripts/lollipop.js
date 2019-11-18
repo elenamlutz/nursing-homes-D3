@@ -114,11 +114,7 @@ function ready(datapoints) {
         .offset([-10, 0])
         .html(function(d) {
           return (
-            "<span style='color:white'>" +
-            'For-Profit: ' +
-            maxHigh +
-            '%' +
-            '</span>'
+            "<span style='color:white'>" + 'For-Profit: ' + maxHigh + '</span>'
           )
         })
 

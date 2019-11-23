@@ -72,8 +72,8 @@ function ready(datapoints) {
       console.log(d)
       const v = d3.select(this)
       const datapoints = d.values
-      const maxHigh = d3.max(datapoints, d => d.value)
-      const minHigh = d3.min(datapoints, d => d.value)
+      // const maxHigh = d3.max(datapoints, d => d.value)
+      // const minHigh = d3.min(datapoints, d => d.value)
 
       // const tip = d3
       //   .tip()
